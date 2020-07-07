@@ -1,0 +1,36 @@
+.container {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.controls-container{
+  display: flex;
+}
+.controls-container>div{
+  padding: 10px;
+  margin: 20px;
+}
+
+.box {
+  min-height: 20rem;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #FFFFFF;
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.06);
+border-radius: 5px;
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+button {
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: transparent;
+}
