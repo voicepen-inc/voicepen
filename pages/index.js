@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import Layout from "../components/Layout";
+import RecordControl from "../components/Buttons/RecordControl";
 
 function App() {
   const [mic, setMic] = useState(null);
@@ -21,10 +22,6 @@ function App() {
 
     setMic(micObj);
   }, []);
-
-  useEffect(() => {
-    handleListen();
-  }, [isListening]);
 
   const handleListen = () => {
     if (mic !== null) {
@@ -51,12 +48,16 @@ function App() {
           .join("");
         console.log(transcript);
         setNote(transcript);
-        mic.onerror = (event) => {
-          console.log(event.error);
+        mic.onerror = (errorEvent) => {
+          console.log(errorEvent.error);
         };
       };
     }
   };
+
+  useEffect(() => {
+    handleListen();
+  }, [isListening]);
 
   const handleSaveNote = () => {
     setSavedNotes([...savedNotes, note]);
@@ -83,28 +84,20 @@ function App() {
           </div>
           <div className="controls-container">
             <div className="controls">
-              <img
-                src="/images/mic.svg"
-                alt=""
-                onClick={() => setIsListening((prevState) => true)}
-                title="click and speak"
+              <RecordControl
+                onClickHandler={() => setIsListening(true)}
+                title="Click and speak"
+                image="/images/mic.svg"
               />
-            </div>
-            <div>
-              <img
-                src="/images/pause.svg"
-                alt=""
-                onClick={() => setIsListening((prevState) => false)}
-                title="stop"
+              <RecordControl
+                onClickHandler={() => setIsListening(false)}
+                title="Stop"
+                image="/images/pause.svg"
               />
-            </div>
-            <div>
-              <img
-                src="/images/push.svg"
-                alt=""
-                onClick={handleSaveNote}
-                disabled={!note}
-                title="push to editor"
+              <RecordControl
+                onClickHandler={handleSaveNote}
+                title="Push to editor"
+                image="/images/push.svg"
               />
             </div>
           </div>

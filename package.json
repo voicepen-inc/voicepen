@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,22 @@
   "homepage": "https://github.com/voicepen-inc/voicepen#readme",
   "dependencies": {
     "next": "^9.4.4",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.7",
+    "ghooks": "^2.0.4"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run lint"
+    }
   }
 }

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Header from "../Header";
 
 function Layout({ children }) {
@@ -8,5 +9,9 @@ function Layout({ children }) {
     </>
   );
 }
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Layout;

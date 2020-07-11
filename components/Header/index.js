@@ -1,8 +1,8 @@
+import Link from "next/link";
 import styles from "./index.module.scss";
 
 import links from "./links";
 import Logo from "../Logo";
-import Link from "next/link";
 
 const Nav = () => (
   <nav className={styles.nav}>
