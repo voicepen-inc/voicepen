@@ -1,3 +1,22 @@
+:root {
+  --main-orange: #f2994a;
+
+  --mid-fontsize: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   margin: 20px;
   display: grid;

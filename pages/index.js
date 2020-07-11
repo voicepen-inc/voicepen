@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+
+import Layout from "../components/Layout";
 
 function App() {
   const [mic, setMic] = useState(null);
@@ -62,7 +64,7 @@ function App() {
   };
 
   return (
-    <>
+    <Layout>
       <div className="container">
         <div>
           <div className="box">
@@ -116,7 +118,7 @@ function App() {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   );
 }
 
