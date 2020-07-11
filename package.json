@@ -1,28 +1,27 @@
 {
-    "name": "voicepen",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "dev": "next",
-      "build": "next build",
-      "start": "next start"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/voicepen-inc/voicepen.git"
-    },
-    "keywords": [],
-    "author": "Dillion Megida <dillionmegida@gmail.com>",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/voicepen-inc/voicepen/issues"
-    },
-    "homepage": "https://github.com/voicepen-inc/voicepen#readme",
-    "dependencies": {
-      "next": "^9.4.4",
-      "react": "^16.13.1",
-      "react-dom": "^16.13.1"
-    }
+  "name": "voicepen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voicepen-inc/voicepen.git"
+  },
+  "keywords": [],
+  "author": "Dillion Megida <dillionmegida@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voicepen-inc/voicepen/issues"
+  },
+  "homepage": "https://github.com/voicepen-inc/voicepen#readme",
+  "dependencies": {
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
-  
+}

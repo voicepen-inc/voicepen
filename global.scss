@@ -3,10 +3,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.controls-container{
+.controls-container {
   display: flex;
 }
-.controls-container>div{
+.controls-container > div {
   padding: 10px;
   margin: 20px;
 }
@@ -16,11 +16,11 @@
   margin: 30px;
   padding: 20px;
   border-radius: 5px;
-  background: #FFFFFF;
-border: 1px solid #E5E5E5;
-box-sizing: border-box;
-box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.06);
-border-radius: 5px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
 }
 
 h1 {
